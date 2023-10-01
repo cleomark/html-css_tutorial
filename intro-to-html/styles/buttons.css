@@ -1,0 +1,50 @@
+
+        button{
+            border: none;
+            padding: 10px 15px;
+            margin-right: 10px;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+        #yt{
+            border-radius: 3px;
+            color: #fff;
+            background-color: #970001;
+            transition: opacity 0.15s;
+        }
+        #yt:hover{
+            opacity: 0.6;
+        }
+        #yt:active{
+            opacity: 0.4;
+        }
+    
+        #fb{
+            color: #156cb2;
+            border: 1px solid #156cb2;
+            border-radius: 3px;
+            background-color: transparent; 
+            transition: background-color 0.15s,
+                color 0.15s,
+                padding 0.2s;
+        }
+        #fb:hover{
+            color: #fff;
+            background-color: #156cb2;
+            border: 1px solid #156cb2;
+    
+        }
+        #fb:active{
+            opacity: 0.7;
+        }
+        #tweet{
+            color: #fff;
+            font-weight: bold;
+            font-size: 15px;
+            border-radius: 25px;
+            background-color: #156cb2; 
+            transition: box-shadow 0.3s;
+        }
+        #tweet:hover{
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+        }

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout Sample</title>
+
+    <style>
+        *{
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-color: black;
+        }
+        .search-bar{
+            display: block;
+        }
+        .video-container{
+            height: 300px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 20px;
+            row-gap: 30px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        /* .video-preview{
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 10px;
+        } */
+        .thumbnail{
+            width: 100%;
+        }
+        /* .thumbnail-container{
+            display: grid;
+            grid-template-columns: 300px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        } */
+        .detail-container{
+            display: grid;
+            grid-template-columns: 50px 1fr;
+            margin-top: 10px;
+        }
+        .profile-pic{
+            width: 80%;
+            object-fit: cover;
+            border-radius: 50px;
+        }
+        .profile-pic-container{
+            vertical-align: top;
+        }
+        .title{
+            font-size: 14px;
+            font-weight: bold;
+            width: 100%;
+            line-height: 22px;
+            margin-top: 0;
+            margin-bottom: 12px;
+        }
+        .author{
+            font-size: 12px;
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+        .stats{
+            font-size: 12px;
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" class="search-bar" placeholder="Search">
+    
+    <div class="video-container">
+
+        <div class="video-preview">
+            <div class="thumbnail-container">
+                <img src="thumbnails/thumbnail-1.webp" alt="" class="thumbnail">
+            </div>
+            <div class="detail-container">
+                <div class="profile-pic-container">
+                    <img src="channel-pics/idPicture.jpg" alt="" class="profile-pic">
+                </div>
+                <div>
+                    <p class="title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                    <p class="author">Marques Brownlee</p>
+                    <p class="stats">3.4m views &#183; 6 months ago</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="video-preview">
+            <div class="thumbnail-container">
+                <img src="thumbnails/thumbnail-2.webp" alt="" class="thumbnail">
+            </div>
+            <div class="detail-container">
+                <div class="profile-pic-container">
+                    <img src="channel-pics/idPicture.jpg" alt="" class="profile-pic">
+                </div>
+                <div>
+                    <p class="title">Bosnov and Fanum Compilation!</p>
+                    <p class="author">Bosnov</p>
+                    <p class="stats">736k views &#183; 1 month ago</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-preview">
+            <div class="thumbnail-container">
+                <img src="thumbnails/thumbnail-3.webp" alt="" class="thumbnail">
+            </div>
+            <div class="detail-container">
+                <div class="profile-pic-container">
+                    <img src="channel-pics/idPicture.jpg" alt="" class="profile-pic">
+                </div>
+                <div>
+                    <p class="title">My Biggest Studying Mistake - The Feynman Technique</p>
+                    <p class="author">Zach Highley</p>
+                    <p class="stats">3.3m views &#183; 1 year ago</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-preview">
+            <div class="thumbnail-container">
+                <img src="thumbnails/thumbnail-4.webp" alt="" class="thumbnail">
+            </div>
+            <div class="detail-container">
+                <div class="profile-pic-container">
+                    <img src="channel-pics/idPicture.jpg" alt="" class="profile-pic">
+                </div>
+                <div>
+                    <p class="title">Nadine Lee blind dates 10 guys by type | vs 1</p>
+                    <p class="author">nectar </p>
+                    <p class="stats">2.5m views &#183; 2 months ago</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-preview">
+            <div class="thumbnail-container">
+                <img src="thumbnails/thumbnail-5.webp" alt="" class="thumbnail">
+            </div>
+            <div class="detail-container">
+                <div class="profile-pic-container">
+                    <img src="channel-pics/idPicture.jpg" alt="" class="profile-pic">
+                </div>
+                <div>
+                    <p class="title">A Very Good Prank | Everyday Kath</p>
+                    <p class="author">Kathryn Bernardo</p>
+                    <p class="stats">171k views &#183; 12 hours ago</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-preview">
+            <div class="thumbnail-container">
+                <img src="thumbnails/thumbnail-6.webp" alt="" class="thumbnail">
+            </div>
+            <div class="detail-container">
+                <div class="profile-pic-container">
+                    <img src="channel-pics/idPicture.jpg" alt="" class="profile-pic">
+                </div>
+                <div>
+                    <p class="title">singing to strangers on omegle | dont cry its just a song</p>
+                    <p class="author">Jong Madaliday</p>
+                    <p class="stats">428k views &#183; 9 days ago</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+
+
+</body>
+</html>
