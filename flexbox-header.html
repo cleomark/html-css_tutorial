@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Using Flexbox</title>
+
+    <style>
+        *{
+            color: #fff;
+        }
+        .header-container{
+            background-color: purple;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .home-button{
+            width: 100px;
+            text-align: center;
+        }
+        .search-box{
+            flex: 1;
+            text-align: center;
+            min-width: 100px;
+        }
+        input{
+            width: 80%;
+            padding: 5px 15px;
+            border: none;
+            border-radius: 15px;
+        }
+        .dowload-button{
+            width: 150px;
+            text-align: center;
+        }
+        button{
+            padding: 5px 15px;
+            background-color: transparent;
+            border: 1px solid #fff;
+            border-radius: 3px;
+        }
+    </style>
+    
+
+</head>
+<body>
+    <div class="header-container">
+        <div class="home-button">
+            <h4>Home</h4>
+        </div>
+        <div class="search-box">
+            <input type="text" placeholder="Search">
+        </div>
+        <div class="dowload-button">
+            <button>Download</button>
+        </div>
+    </div>
+</body>
+</html>
