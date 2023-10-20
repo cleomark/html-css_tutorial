@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Position</title>
+
+    <style>
+        body{
+            padding-top: 65px;
+            padding-left: 80px;
+        }
+        .header{
+            background-color: black; 
+            color: white; 
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 55px;
+            z-index: 1;
+        }
+        .sidebar{
+            background-color: green; 
+            color: #fff; 
+            position: fixed;
+            top: 55px;
+            left: 0;
+            bottom: 0;
+            width: 72px;
+        }
+        .floating-text{
+            position: absolute;
+            background-color: red;
+            color: white;
+            top: 0px;
+            right: 0px;
+        }
+        .content1{
+            background-color: lightpink; 
+            height: 200px; 
+            width: 200px;
+            position: static;
+        }
+        .content2{
+            background-color: lightblue;
+            height: 200px; 
+            width: 200px;
+            position: relative;
+        }
+    </style>
+
+</head>
+<body style="height: 3000px;">
+    <div class="header">
+        Header
+    </div>
+    <div class="sidebar">
+        sidebar
+        <div class="floating-text">
+            x
+        </div>
+    </div>
+    <div class="floating-text" style="top: 60px; right: 50px;">
+        position absolute
+    </div>
+    <div class="content1">
+        div 1
+    </div>
+    <div class="content2">
+        div 2
+        <div style="position: absolute; color: white; background-color: black; right: 5px; bottom: 5px; height: 15px;">
+            5:00
+        </div>
+    </div>
+</body>
+</html>

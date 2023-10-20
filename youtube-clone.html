@@ -7,132 +7,313 @@
 
     <link rel="stylesheet" href="general.css">
     <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="sidebar.css">
     <link rel="stylesheet" href="video.css">
+
+    <script type="text/javascript" src="script.js"></script>
 
 </head>
 <body>
 
-    <div class="header">
+    <header class="header">
         <div class="header-left-section">
             <img class="hamburger-menu" src="/icons/hamburger-menu.svg" alt="">
-            <img class="youtube-logo" src="/icons/youtube-logo.svg" alt="">
+            <div class="youtube-home-button">
+                <img class="youtube-logo" src="/icons/youtube-logo.svg" alt="">
+                <div class="youtube-home-tooltip">Youtube Home</div>
+            </div>
+            
         </div>
         <div class="header-middle-section">
             <input type="text" class="search-bar" placeholder="Search">
             <button class="search-button">
                 <img class="search-icon" src="/icons/search.svg" alt="">
+                <div class="search-tooltip">Search</div>
             </button>
             <button class="voice-search-button">
                 <img class="voice-search-icon" src="/icons/voice-search-icon.svg" alt="">
+                <div class="voice-search-tooltip">Voice Search</div>
             </button>
         </div>
         <div class="header-right-section">
-            right section
+            <div class="upload-button">
+                <img class="upload-icon" src="icons/upload.svg" alt="">
+                <div class="upload-tooltip">Create</div>
+            </div>
+            <div class="youtube-apps-button">
+                <img class="youtube-apps-icon" src="icons/youtube-apps.svg" alt="">
+                <div class="youtube-apps-tooltip">Youtube Apps</div>
+            </div>
+            <div class="notification-button">
+                <img class="notifications-icon" src="icons/notifications.svg" alt="">
+                <div class="notification-count">3</div>
+                <div class="notification-tooltip">Notifications</div>
+            </div>
+            <img class="current-user-picture" src="channel-pics/idPicture.jpg" alt="">
         </div>
         
-    </div>
+    </header>
 
-    <div class="video-container">
-
-        <div class="video-preview">
-            <div class="thumbnail-container">
-                <img src="thumbnails/thumbnail-1.webp" alt="" class="thumbnail">
-            </div>
-            <div class="detail-container">
-                <div class="profile-pic-container">
-                    <img src="channel-pics/idPicture.jpg" alt="" class="profile-pic">
-                </div>
-                <div>
-                    <p class="title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
-                    <p class="author">Marques Brownlee</p>
-                    <p class="stats">3.4m views &#183; 6 months ago</p>
-                </div>
-            </div>
+    <nav class="sidebar">
+        <div class="sidebar-button">
+            <img class="sidebar-icon" src="icons/home.svg" alt="">
+            <p class="sidebar-title">Home</p>
         </div>
+        <div class="sidebar-button">
+            <img class="sidebar-icon" src="icons/explore.svg" alt="">
+            <p class="sidebar-title">Explore</p>
+        </div>
+        <div class="sidebar-button">
+            <img class="sidebar-icon" src="icons/subscriptions.svg" alt="">
+            <p class="sidebar-title">Subscriptions</p>
+        </div>
+        <div class="sidebar-button">
+            <img class="sidebar-icon" src="icons/originals.svg" alt="">
+            <p class="sidebar-title">Originals</p>
+        </div>
+        <div class="sidebar-button">
+            <img class="sidebar-icon" src="icons/youtube-music.svg" alt="">
+            <p class="sidebar-title">Youtube Music</p>
+        </div>
+        <div class="sidebar-button">
+            <img class="sidebar-icon" src="icons/library.svg" alt="">
+            <p class="sidebar-title">Library</p>
+        </div>
+    </nav>
+
+    <main>
+        <section class="video-container">
+
+            <div class="video-preview">
+                <div class="thumbnail-container">
+                    <a href="https://www.youtube.com/watch?v=G3e-cpL7ofc&t=22051s" target="_blank"><img src="thumbnails/thumbnail-1.webp" alt="" class="thumbnail"></a>
+                    <div class="floating-vid-duration">
+                        <p class="time-duration">6:31:24</p>
+                    </div>
+                </div>
+                <div class="detail-container">
+                    <div class="profile-pic-container">
+                        <a href="https://www.youtube.com/@SuperSimpleDev" target="_blank"><img src="channel-pics/vid-1.jpg" alt="" class="profile-pic"></a>
+                    </div>
+                    <div>
+                        <a href="https://www.youtube.com/watch?v=G3e-cpL7ofc&t=22051s" target="_blank"><p class="title">HTML & CSS Full Course - Beginner to Pro</p></a>
+                        <a href="https://www.youtube.com/@SuperSimpleDev" target="_blank"><p class="author">SuperSimpleDev</p></a>
+                        <p class="stats">6.8m views &#183; 1 year ago</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="video-preview">
+                <div class="thumbnail-container">
+                    <a href="https://www.youtube.com/watch?v=HlMIVWxI0Ds&t=13s&pp=ygUcYm9zbm92IGFuZCBmYW51bSBjb21waWxhdGlvbg%3D%3D" target="_blank"><img src="thumbnails/thumbnail-2.webp" alt="" class="thumbnail"></a>
+                    <div class="floating-vid-duration">
+                        <p class="time-duration">10:07</p>
+                    </div>
+                </div>
+                <div class="detail-container">
+                    <div class="profile-pic-container">
+                        <a href="https://www.youtube.com/@Bosnov" target="_blank"><img src="channel-pics/vid-2.jpg" alt="" class="profile-pic"></a>
+                    </div>
+                    <div>
+                        <a href="https://www.youtube.com/watch?v=HlMIVWxI0Ds&t=13s&pp=ygUcYm9zbm92IGFuZCBmYW51bSBjb21waWxhdGlvbg%3D%3D" target="_blank"><p class="title">Bosnov and Fanum Compilation!</p></a>
+                        <a href="https://www.youtube.com/@Bosnov" target="_blank"><p class="author">Bosnov</p></a>
+                        <p class="stats">736k views &#183; 1 month ago</p>
+                    </div>
+                </div>
+            </div>
     
-        <div class="video-preview">
-            <div class="thumbnail-container">
-                <img src="thumbnails/thumbnail-2.webp" alt="" class="thumbnail">
-            </div>
-            <div class="detail-container">
-                <div class="profile-pic-container">
-                    <img src="channel-pics/idPicture.jpg" alt="" class="profile-pic">
+            <div class="video-preview">
+                <div class="thumbnail-container">
+                    <a href="https://www.youtube.com/watch?v=IDB_3S1ezsc&pp=ygUzTXkgQmlnZ2VzdCBTdHVkeWluZyBNaXN0YWtlIC0gVGhlIEZleW5tYW4gVGVjaG5pcXVl" target="_blank"><img src="thumbnails/thumbnail-3.webp" alt="" class="thumbnail"></a>
+                    <div class="floating-vid-duration">
+                        <p class="time-duration">17:25</p>
+                    </div>
                 </div>
-                <div>
-                    <p class="title">Bosnov and Fanum Compilation!</p>
-                    <p class="author">Bosnov</p>
-                    <p class="stats">736k views &#183; 1 month ago</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="video-preview">
-            <div class="thumbnail-container">
-                <img src="thumbnails/thumbnail-3.webp" alt="" class="thumbnail">
-            </div>
-            <div class="detail-container">
-                <div class="profile-pic-container">
-                    <img src="channel-pics/idPicture.jpg" alt="" class="profile-pic">
-                </div>
-                <div>
-                    <p class="title">My Biggest Studying Mistake - The Feynman Technique</p>
-                    <p class="author">Zach Highley</p>
-                    <p class="stats">3.3m views &#183; 1 year ago</p>
+                <div class="detail-container">
+                    <div class="profile-pic-container">
+                        <a href="https://www.youtube.com/@ZachHighley" target="_blank"><img src="channel-pics/vid-3.jpg" alt="" class="profile-pic"></a>
+                    </div>
+                    <div>
+                        <a href="https://www.youtube.com/watch?v=IDB_3S1ezsc&pp=ygUzTXkgQmlnZ2VzdCBTdHVkeWluZyBNaXN0YWtlIC0gVGhlIEZleW5tYW4gVGVjaG5pcXVl" target="_blank"><p class="title">My Biggest Studying Mistake - Feynman Technique</p></a>
+                        <a href="https://www.youtube.com/@ZachHighley" target="_blank"><p class="author">Zach Highley</p></a>
+                        <p class="stats">3.3m views &#183; 1 year ago</p>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="video-preview">
-            <div class="thumbnail-container">
-                <img src="thumbnails/thumbnail-4.webp" alt="" class="thumbnail">
-            </div>
-            <div class="detail-container">
-                <div class="profile-pic-container">
-                    <img src="channel-pics/idPicture.jpg" alt="" class="profile-pic">
-                </div>
-                <div>
-                    <p class="title">Nadine Lee blind dates 10 guys by type | vs 1</p>
-                    <p class="author">nectar </p>
-                    <p class="stats">2.5m views &#183; 2 months ago</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="video-preview">
-            <div class="thumbnail-container">
-                <img src="thumbnails/thumbnail-5.webp" alt="" class="thumbnail">
-            </div>
-            <div class="detail-container">
-                <div class="profile-pic-container">
-                    <img src="channel-pics/idPicture.jpg" alt="" class="profile-pic">
-                </div>
-                <div>
-                    <p class="title">A Very Good Prank | Everyday Kath</p>
-                    <p class="author">Kathryn Bernardo</p>
-                    <p class="stats">171k views &#183; 12 hours ago</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="video-preview">
-            <div class="thumbnail-container">
-                <img src="thumbnails/thumbnail-6.webp" alt="" class="thumbnail">
-            </div>
-            <div class="detail-container">
-                <div class="profile-pic-container">
-                    <img src="channel-pics/idPicture.jpg" alt="" class="profile-pic">
-                </div>
-                <div>
-                    <p class="title">singing to strangers on omegle | dont cry its just a song</p>
-                    <p class="author">Jong Madaliday</p>
-                    <p class="stats">428k views &#183; 9 days ago</p>
-                </div>
-            </div>
-        </div>
-
-    </div>
     
+            <div class="video-preview">
+                <div class="thumbnail-container">
+                    <a href="https://www.youtube.com/watch?v=sjk2rP9u4M4&pp=ygUtTmFkaW5lIExlZSBibGluZCBkYXRlcyAxMCBndXlzIGJ5IHR5cGUgfCB2cyAx" target="_blank"><img src="thumbnails/thumbnail-4.webp" alt="" class="thumbnail"></a>
+                    <div class="floating-vid-duration">
+                        <p class="time-duration">20:32</p>
+                    </div>
+                </div>
+                <div class="detail-container">
+                    <div class="profile-pic-container">
+                        <a href="https://www.youtube.com/@lovecommanectar" target="_blank"><img src="channel-pics/vid-4.jpg" alt="" class="profile-pic"></a>
+                    </div>
+                    <div>
+                        <a href="https://www.youtube.com/watch?v=sjk2rP9u4M4&pp=ygUtTmFkaW5lIExlZSBibGluZCBkYXRlcyAxMCBndXlzIGJ5IHR5cGUgfCB2cyAx" target="_blank"><p class="title">Nadine Lee blind dates 10 guys by type | vs 1</p></a>
+                        <a href="https://www.youtube.com/@lovecommanectar" target="_blank"><p class="author">nectar </p></a>
+                        <p class="stats">2.5m views &#183; 2 months ago</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="video-preview">
+                <div class="thumbnail-container">
+                    <a href="https://www.youtube.com/watch?v=qCJuoVakN_M&pp=ygUhQSBWZXJ5IEdvb2QgUHJhbmsgfCBFdmVyeWRheSBLYXRo" target="_blank"><img src="thumbnails/thumbnail-5.webp" alt="" class="thumbnail"></a>
+                    <div class="floating-vid-duration">
+                        <p class="time-duration">13:40</p>
+                    </div>
+                </div>
+                <div class="detail-container">
+                    <div class="profile-pic-container">
+                        <a href="https://www.youtube.com/@everydaykath" target="_blank"><img src="channel-pics/vid-5.jpg" alt="" class="profile-pic"></a>
+                    </div>
+                    <div>
+                        <a href="https://www.youtube.com/watch?v=qCJuoVakN_M&pp=ygUhQSBWZXJ5IEdvb2QgUHJhbmsgfCBFdmVyeWRheSBLYXRo" target="_blank"><p class="title">A Very Good Prank | Everyday Kath</p></a>
+                        <a href="https://www.youtube.com/@everydaykath" target="_blank"><p class="author">Kathryn Bernardo</p></a>
+                        <p class="stats">171k views &#183; 12 hours ago</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="video-preview">
+                <div class="thumbnail-container">
+                    <a href="https://www.youtube.com/watch?v=CiNqVfaGVog&t=18s&pp=ygU5c2luZ2luZyB0byBzdHJhbmdlcnMgb24gb21lZ2xlIHwgZG9udCBjcnkgaXRzIGp1c3QgYSBzb25n" target="_blank"><img src="thumbnails/thumbnail-6.webp" alt="" class="thumbnail"></a>
+                    <div class="floating-vid-duration">
+                        <p class="time-duration">19:55</p>
+                    </div>
+                </div>
+                <div class="detail-container">
+                    <div class="profile-pic-container">
+                        <a href="https://www.youtube.com/@JongMadaliday" target="_blank"><img src="channel-pics/vid-6.jpg" alt="" class="profile-pic"></a>
+                    </div>
+                    <div>
+                        <a href="https://www.youtube.com/watch?v=CiNqVfaGVog&t=18s&pp=ygU5c2luZ2luZyB0byBzdHJhbmdlcnMgb24gb21lZ2xlIHwgZG9udCBjcnkgaXRzIGp1c3QgYSBzb25n" target="_blank"><p class="title">singing to strangers on omegle | dont cry its just a song</p></a>
+                        <a href="https://www.youtube.com/@JongMadaliday" target="_blank"><p class="author">Jong Madaliday</p></a>
+                        <p class="stats">428k views &#183; 9 days ago</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="video-preview">
+                <div class="thumbnail-container">
+                    <a href="https://www.youtube.com/watch?v=zBc-8NqtVCo&pp=ygUqU1BVUlMgYXQgVEhVTkRFUiB8IE5CQSBQUkVTRUFTT04gRlVMTCBHQU1F" target="_blank"><img src="thumbnails/thumbnail-7.webp" alt="" class="thumbnail"></a>
+                    <div class="floating-vid-duration">
+                        <p class="time-duration">9:37</p>
+                    </div>
+                </div>
+                <div class="detail-container">
+                    <div class="profile-pic-container">
+                        <a href="https://www.youtube.com/@NBA" target="_blank"><img src="channel-pics/vid-7.jpg" alt="" class="profile-pic"></a>
+                    </div>
+                    <div>
+                        <a href="https://www.youtube.com/watch?v=zBc-8NqtVCo&pp=ygUqU1BVUlMgYXQgVEhVTkRFUiB8IE5CQSBQUkVTRUFTT04gRlVMTCBHQU1F" target="_blank"><p class="title">SPURS at THUNDER | NBA PRESEASON FULL GAME</p></a>
+                        <a href="https://www.youtube.com/@NBA" target="_blank"><p class="author">NBA</p></a>
+                        <p class="stats">1M views &#183; 2 days ago</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="video-preview">
+                <div class="thumbnail-container">
+                    <a href="https://www.youtube.com/watch?v=4RXLaK7-zFg&pp=ygVCanVhbiBrYXJsb3MgLSBUYXB1c2luIE5hIE5hdGluICdUbyBmZWF0LiBQYW9sbyBCZW5qYW1pbiBvZiBCZW4mQmVu" target="_blank"><img src="thumbnails/thumbnail-8.webp" alt="" class="thumbnail"></a>
+                    <div class="floating-vid-duration">
+                        <p class="time-duration">3:04</p>
+                    </div>
+                </div>
+                <div class="detail-container">
+                    <div class="profile-pic-container">
+                        <a href="https://www.youtube.com/channel/UC14oPNk-BubCU2aCmtHosLg" target="_blank"><img src="channel-pics/vid-8.jpg" alt="" class="profile-pic"></a>
+                    </div>
+                    <div>
+                        <a href="https://www.youtube.com/watch?v=4RXLaK7-zFg&pp=ygVCanVhbiBrYXJsb3MgLSBUYXB1c2luIE5hIE5hdGluICdUbyBmZWF0LiBQYW9sbyBCZW5qYW1pbiBvZiBCZW4mQmVu" target="_blank"><p class="title">juan karlos - Tapusin Na Natin 'To feat. Paolo Benjamin of Ben&Ben</p></a>
+                        <a href="https://www.youtube.com/channel/UC14oPNk-BubCU2aCmtHosLg" target="_blank"><p class="author">juan karlos</p></a>
+                        <p class="stats">479k views &#183; 5 days ago</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="video-preview">
+                <div class="thumbnail-container">
+                    <a href="https://www.youtube.com/watch?v=SzINZZ6iqxY&pp=ygUrVEhFIEJFRUtFRVBFUiB8IE9mZmljaWFsIFJlc3RyaWN0ZWQgVHJhaWxlcg%3D%3D" target="_blank"><img src="thumbnails/thumbnail-9.webp" alt="" class="thumbnail"></a>
+                    <div class="floating-vid-duration">
+                        <p class="time-duration">2:53</p>
+                    </div>
+                </div>
+                <div class="detail-container">
+                    <div class="profile-pic-container">
+                        <a href="https://www.youtube.com/@MGMStudios" target="_blank"><img src="channel-pics/vid-9.jpg" alt="" class="profile-pic"></a>
+                    </div>
+                    <div>
+                        <a href="https://www.youtube.com/watch?v=SzINZZ6iqxY&pp=ygUrVEhFIEJFRUtFRVBFUiB8IE9mZmljaWFsIFJlc3RyaWN0ZWQgVHJhaWxlcg%3D%3D" target="_blank"><p class="title">THE BEEKEEPER | Official Restricted Trailer</p></a>
+                        <a href="https://www.youtube.com/@MGMStudios" target="_blank"><p class="author">MGM</p></a>
+                        <p class="stats">10M views &#183; 10 days ago</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="video-preview">
+                <div class="thumbnail-container">
+                    <a href="https://www.youtube.com/watch?v=XoiOOiuH8iI&pp=ygUjVHlsYSAtIFdhdGVyIChPZmZpY2lhbCBNdXNpYyBWaWRlbyk%3D" target="_blank"><img src="thumbnails/thumbnail-10.webp" alt="" class="thumbnail"></a>
+                    <div class="floating-vid-duration">
+                        <p class="time-duration">3:40</p>
+                    </div>
+                </div>
+                <div class="detail-container">
+                    <div class="profile-pic-container">
+                        <a href="https://www.youtube.com/channel/UC8HOgNWipVorrlBH8oN2R-A" target="_blank"><img src="channel-pics/vid-10.jpg" alt="" class="profile-pic"></a>
+                    </div>
+                    <div>
+                        <a href="https://www.youtube.com/watch?v=XoiOOiuH8iI&pp=ygUjVHlsYSAtIFdhdGVyIChPZmZpY2lhbCBNdXNpYyBWaWRlbyk%3D" target="_blank"><p class="title">Tyla - Water (Official Music Video)</p></a>
+                        <a href="https://www.youtube.com/channel/UC8HOgNWipVorrlBH8oN2R-A" target="_blank"><p class="author">Tyla</p></a>
+                        <p class="stats">5.5M views &#183; 5 days ago</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="video-preview">
+                <div class="thumbnail-container">
+                    <a href="https://www.youtube.com/watch?v=P8AF8DFy1a4&pp=ygUlU0hSRURERUQgQ0hFU1QgV09SS09VVCB8IE9MWU1QSUEgUFJFUA%3D%3D" target="_blank"><img src="thumbnails/thumbnail-11.webp" alt="" class="thumbnail"></a>
+                    <div class="floating-vid-duration">
+                        <p class="time-duration">21:45</p>
+                    </div>
+                </div>
+                <div class="detail-container">
+                    <div class="profile-pic-container">
+                        <a href="https://www.youtube.com/@ChrisBumstead" target="_blank"><img src="channel-pics/vid-11.jpg" alt="" class="profile-pic"></a>
+                    </div>
+                    <div>
+                        <a href="https://www.youtube.com/watch?v=P8AF8DFy1a4&pp=ygUlU0hSRURERUQgQ0hFU1QgV09SS09VVCB8IE9MWU1QSUEgUFJFUA%3D%3D" target="_blank"><p class="title">SHREDDED CHEST WORKOUT | OLYMPIA PREP</p></a>
+                        <a href="https://www.youtube.com/@ChrisBumstead" target="_blank"><p class="author">Chris Bumstead</p></a>
+                        <p class="stats">575k views &#183; 2 days ago</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="video-preview">
+                <div class="thumbnail-container">
+                    <a href="https://www.youtube.com/watch?v=vXPZ370y824&t=248s&pp=ygUpRklSU1QgR0FNRSBOSSBLWUxFISBQT0lOVCBHT0QgTkcgTkNBQSA5OT8%3D" target="_blank"><img src="thumbnails/thumbnail-12.webp" alt="" class="thumbnail"></a>
+                    <div class="floating-vid-duration">
+                        <p class="time-duration">8:44</p>
+                    </div>
+                </div>
+                <div class="detail-container">
+                    <div class="profile-pic-container">
+                        <a href="https://www.youtube.com/@kytjimeneztrx3269" target="_blank"><img src="channel-pics/vid-12.jpg" alt="" class="profile-pic"></a>
+                    </div>
+                    <div>
+                        <a href="https://www.youtube.com/watch?v=vXPZ370y824&t=248s&pp=ygUpRklSU1QgR0FNRSBOSSBLWUxFISBQT0lOVCBHT0QgTkcgTkNBQSA5OT8%3D" target="_blank"><p class="title">FIRST GAME NI KYLE! POINT GOD NG NCAA 99?</p></a>
+                        <a href="https://www.youtube.com/@kytjimeneztrx3269" target="_blank"><p class="author">Kyt Jimenez TRX</p></a>
+                        <p class="stats">150k views &#183; 2 weeks ago</p>
+                    </div>
+                </div>
+            </div>
+    
+        </section>
 
-
+    </main>
 </body>
 </html>
