@@ -16,12 +16,24 @@
 }
 .header-left-section{
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
+}
+.hamburger-menu-button{
+    margin: 0 24px;
+    position: relative;
+}
+.hamburger-menu-button:hover {
+    width: 35px;
+    height: 35px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 50%; 
+    transition: all 0.3s ease;
 }
 .hamburger-menu{
     height: 24px;
-    margin-left: 24px;
-    margin-right: 24px;
+    padding-top: 5px;
 }
 .youtube-logo{
     height: 20px;
@@ -134,7 +146,7 @@
     text-align: center;
     height: 12px;
     width: 12px;
-    border-radius: 10px;
+    border-radius: 50%;
     padding: 1px;
     position: absolute;
     top: 0;

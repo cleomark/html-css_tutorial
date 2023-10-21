@@ -1,88 +1,97 @@
-.video-container{
+.video-container {
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 20px;
     row-gap: 20px;
     padding-bottom: 20px;
+    transition: all 0.3s; 
 }
+
 @media (max-width: 750px) {
-    .video-container{
+    .video-container {
         grid-template-columns: 1fr 1fr;
     }
 }
-@media (min-width: 751px) and (max-width: 999px){
-    .video-container{
+
+@media (min-width: 751px) and (max-width: 999px) {
+    .video-container {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
-@media (min-width: 1000px){
-    .video-container{
+
+@media (min-width: 1000px) {
+    .video-container {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
-/* .video-preview{
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 10px;
-} */
-.thumbnail-container{
-    /* display: grid;
-    grid-template-columns: 300px;
-    margin-top: 10px;
-    margin-bottom: 10px; */
+
+.thumbnail-container {
     position: relative;
-    
 }
-.thumbnail{
-    /* border-radius: 15px; */
+
+.thumbnail {
     width: 100%;
 }
-.floating-vid-duration{
+
+.floating-vid-duration {
     background-color: rgba(54, 52, 52, 0.596);
     border-radius: 5px;
     position: absolute;
     right: 10px;
     bottom: 15px;
+    transition: all 0.3s; 
 }
-.time-duration{
+
+.time-duration {
     color: #fff;
     font-size: 12px;
     margin: 1px 3px;
 }
-.detail-container{
+
+.detail-container {
     display: grid;
     grid-template-columns: 50px 1fr;
     margin-top: 10px;
 }
-.profile-pic{
+
+.profile-pic {
     width: 75%;
     object-fit: cover;
     border-radius: 50px;
+    transition: all 0.3s; 
 }
-.profile-pic-container{
+
+.profile-pic-container {
     vertical-align: top;
 }
-a{
+
+a {
     text-decoration: none;
 }
-.title{
+
+.title {
     font-size: 14px;
     font-weight: bold;
     width: 100%;
     line-height: 22px;
     margin-top: 0;
     margin-bottom: 5px;
+    transition: all 0.3s; 
 }
-.author{
+
+.author {
     font-size: 12px;
     margin-top: 0;
     margin-bottom: 5px;
+    transition: all 0.3s; 
 }
-.author:hover{
+
+.author:hover {
     text-decoration: underline;
 }
-.stats{
+
+.stats {
     font-size: 12px;
     margin: 0;
     pointer-events: none;
